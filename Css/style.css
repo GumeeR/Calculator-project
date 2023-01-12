@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #972684, #fa8edf);
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(187, 130, 130);
+    background-color: rgb(255, 172, 241);
+  }
+  
+  #display {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 33px;
+  }
+
+  #limpiar {
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-number {
+    background-color: rgb(255, 254, 254);
+    color: black;
+  }
+  
+  .btn-operator {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-igual {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+  }
+  
+  .theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .theme-toggler::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+    z-index: -1;
+  }
+  
+  .theme-toggler.active {
+    color: black;
+  }
+  
+  .theme-toggler.active::before {
+    background-color: white;
+  }
+  
+  button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  #igual {
+    height: 140px;
+  }
