@@ -4,7 +4,6 @@ A simple and interactive calculator built with **HTML, CSS, and JavaScript**. It
 
 ## 🚀 Features
 
-- 🌑 **Dark mode toggle**  
 - 🔢 **Basic arithmetic operations** (+, -, ×, ÷)  
 - 🧹 **Clear and backspace functions**  
 - 🎨 **Responsive and modern design**  
